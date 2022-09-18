@@ -143,7 +143,7 @@ const saveMetadata = (_loadedImageObject) => {
     image: `${baseUri}/${shortName}.png`,
     edition: Number(shortName),
     attributes: tempAttributes,
-    compiler: "HashLips Art Engine",
+    compiler: "AlphaShares.io",
   };
   fs.writeFileSync(
     `${buildDir}/${shortName}.json`,

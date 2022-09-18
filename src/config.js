@@ -5,34 +5,30 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
+const namePrefix = "Line ballers";
+const description = "Line ballers is a Collaboration of two artists bridging abstract and sports culture together. This one of one collection is an artistic way of colliding two worlds into one.";
+const baseUri = "https://metadata.nodeify.xyz/assets/a94f5475-9140-4d76-82aa-b9c986c3a8e8";
 
-const solanaMetadata = {
-  symbol: "YC",
-  seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
-  creators: [
-    {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
-      share: 100,
-    },
-  ],
-};
+// const solanaMetadata = {
+//   symbol: "YC",
+//   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
+//   external_url: "https://www.youtube.com/c/hashlipsnft",
+//   creators: [
+//     {
+//       address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+//       share: 100,
+//     },
+//   ],
+// };
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 12000,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Overlay" },
+      { name: "Rank" },
     ],
   },
 ];
@@ -42,8 +38,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 1024,
+  height: 1024,
   smoothing: false,
 };
 
@@ -82,7 +78,7 @@ const extraMetadata = {};
 
 const rarityDelimiter = "#";
 
-const uniqueDnaTorrance = 10000;
+const uniqueDnaTorrance = 50000;
 
 const preview = {
   thumbPerRow: 5,
@@ -116,7 +112,7 @@ module.exports = {
   text,
   namePrefix,
   network,
-  solanaMetadata,
+  // solanaMetadata,
   gif,
   preview_gif,
 };
