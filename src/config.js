@@ -7,7 +7,7 @@ const network = NETWORK.eth;
 // General metadata for Ethereum
 const namePrefix = "Line ballers";
 const description = "Line ballers is a Collaboration of two artists bridging abstract and sports culture together. This one of one collection is an artistic way of colliding two worlds into one.";
-const baseUri = "ipfs://NewUriToReplace";
+const baseUri = "https://metadata.nodeify.xyz/assets/a94f5475-9140-4d76-82aa-b9c986c3a8e8";
 
 // const solanaMetadata = {
 //   symbol: "YC",
@@ -24,7 +24,7 @@ const baseUri = "ipfs://NewUriToReplace";
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 100,
+    growEditionSizeTo: 12000,
     layersOrder: [
       { name: "Background" },
       { name: "Overlay" },
@@ -78,7 +78,7 @@ const extraMetadata = {};
 
 const rarityDelimiter = "#";
 
-const uniqueDnaTorrance = 10000;
+const uniqueDnaTorrance = 50000;
 
 const preview = {
   thumbPerRow: 5,
